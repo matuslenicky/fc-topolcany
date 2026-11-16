@@ -1,0 +1,27 @@
+{
+  "zdroj": "web klubu fcto.sk (O nás, Mládež, Aktuality)",
+  "url": "https://www.fcto.sk/o-nas/",
+  "fotky": [
+    { "meno": "hero", "subor": "banner_d239c4d1d49b123f.webp", "pomer": 1.5, "fy": 0.45, "sirky": [480, 800, 1200, 1600], "q": 64, "alt": "Hráči FC Topoľčany v červených dresoch na domácom ihrisku" },
+    { "meno": "muzstvo", "subor": "big/o_nas_b_d58593519a16520b.webp", "pomer": 2, "fy": 0.55, "sirky": [640, 1024, 1600], "alt": "Mužstvo FC Topoľčany v bielych dresoch pred zápasom na domácom štadióne" },
+    { "meno": "stadion", "subor": "domov_00356408c2900acf.webp", "pomer": 1.8, "fy": 0.5, "sirky": [640, 1024, 1600], "alt": "Hlavná tribúna Štadióna Vojtecha Schotterta v Topoľčanoch" },
+    { "meno": "stena", "subor": "big/o_nas_b_c7ba27d5239e129f.webp", "sirky": [480, 960], "alt": "Stena na štadióne s erbom klubu v červeno-bielych pruhoch a nápisom My sme tu doma" },
+    { "meno": "pohare", "subor": "majstrovsky_hatrick_ab08dfc6556d829b.webp", "sirky": [480, 960], "alt": "Tri poháre pre víťazov mládežníckych súťaží ZsFZ zo sezóny 2021/22" },
+    { "meno": "deti", "subor": "big/futbalovy_klub_fc_topolcany_b_88a4ed5cb968b801.webp", "pomer": 1.5, "sirky": [480, 960, 1353], "alt": "Deti z mládeže FC Topoľčany s loptami na ihrisku s umelou trávou" },
+    { "meno": "trening", "subor": "big/futbalovy_klub_fc_topolcany_b_65620eaa5f39ede3.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Tréning prípravky medzi kužeľmi" },
+    { "meno": "majstri", "subor": "big/novy_rekord_2_ligy_sz_zsfz_b_167a6e300301a23d.webp", "pomer": 1.5, "fy": 0.35, "sirky": [480, 960], "alt": "Mládežnícke mužstvo FC Topoľčany s pohárom pre víťaza súťaže" },
+    { "meno": "mladez", "subor": "kontakt_75595bd67f2e3664.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Súboj o loptu v zápase mládeže" },
+    { "meno": "g1", "skupina": "galeria", "subor": "big/o_nas_b_6684017279e7ec6f.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Hráči sa tešia z gólu pred bránou" },
+    { "meno": "g2", "skupina": "galeria", "subor": "big/o_nas_b_16a22f323ac763f6.webp", "pomer": 1.5, "fy": 0.55, "sirky": [480, 960], "alt": "Hráč FC Topoľčany v bielom drese vedie loptu" },
+    { "meno": "g3", "skupina": "galeria", "subor": "big/o_nas_b_c541944df46b5bef.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Hráč v červenom drese pred skĺznutím súpera" },
+    { "meno": "g4", "skupina": "galeria", "subor": "big/o_nas_b_64d82ee60dff3a94.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Súboj o loptu pri tribúne" },
+    { "meno": "g5", "skupina": "galeria", "subor": "big/o_nas_b_d95d51129e8c75c1.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Hráč FC Topoľčany so zdvihnutým prstom po góle" },
+    { "meno": "g6", "skupina": "galeria", "subor": "big/o_nas_b_ee8c51eaa91ccb01.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Brankár chytá loptu v páde" },
+    { "meno": "g7", "skupina": "galeria", "subor": "big/o_nas_b_9f839690cb4c5e88.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Hráč v bielom drese uniká s loptou" },
+    { "meno": "g8", "skupina": "galeria", "subor": "big/o_nas_b_d0907db8b5efbe9b.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Radosť hráča s rozpaženými rukami" },
+    { "meno": "g9", "skupina": "galeria", "subor": "big/o_nas_b_75b135dbc50a2d4f.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Hráč v červenom drese medzi dvoma súpermi" },
+    { "meno": "g10", "skupina": "galeria", "subor": "big/o_nas_b_03b52a94e8dcb801.webp", "pomer": 1.5, "fy": 0.5, "sirky": [480, 960], "alt": "Útočná akcia hráčov v červených dresoch" },
+    { "meno": "g11", "skupina": "galeria", "subor": "big/o_nas_b_550b8639ed361ea0.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Hráči sa objímajú po góle" },
+    { "meno": "g12", "skupina": "galeria", "subor": "big/o_nas_b_44b0b809c1404b73.webp", "pomer": 1.5, "sirky": [480, 960], "alt": "Hráči v bielych dresoch v súboji o loptu" }
+  ]
+}

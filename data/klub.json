@@ -1,0 +1,115 @@
+{
+  "_zdroj": "Ručne zapísané len zo zverejnených zdrojov (uvedené pri každej časti). Nič nedopĺňať odhadom – chýbajúce údaje dodá klub.",
+  "nazov": "FC Topoľčany",
+  "kratky": "FC Topoľčany",
+  "prezyvka": "Žochári",
+  "_prezyvka": "web klubu fcto.sk (Nový rekord 2. ligy SŽ: „2. liga žiakov patrí Žochárom“), Facebook klubu facebook.com/fczochari",
+  "pravnyNazov": "FC Topoľčany o.z.",
+  "mesto": "Topoľčany",
+  "zalozenie": 2020,
+  "futbalOd": 1912,
+  "_futbalOd": "RSSSF – zoznam dátumov založenia slovenských klubov (1912, NLTE Topoľčany); Wikipédia en (MFK Topvar Topoľčany, založený 1912)",
+  "adresa": ["Dr. P. Adámiho", "955 01 Topoľčany"],
+  "_adresa": "Sportnet – adresa štadióna zo zápisu o stretnutí; sídlo občianskeho združenia na webe klubu nie je uvedené",
+  "_kontakt": "web klubu fcto.sk – Kontakt, Mládež, Fan zóna",
+  "kontakt": { "osoba": "Pavol Baláž", "funkcia": "športový riaditeľ", "telefon": "+421 915 775 966", "email": "fc.topolcany.oz@gmail.com" },
+  "mladez": { "telefon": "+421 911 111 159", "email": "mladez@fcto.sk" },
+  "fanzona": {
+    "_zdroj": "web klubu fcto.sk – Fan zóna",
+    "predmety": ["šále", "hrnčeky", "minidresíky, aj s vlastným menom a číslom", "vlajočky"],
+    "email": "futbaltopolcany@gmail.com",
+    "telefon": "+421 915 775 966"
+  },
+  "clenske": {
+    "_zdroj": "web klubu fcto.sk – Mládež (Členské poplatky, „pre aktuálnu sezónu“, bez dátumu)",
+    "mesacne": [["U7", 30], ["U8", 40], ["U9 – U15", 50], ["U17", 30]],
+    "pozn": "Druhé dieťa z rodiny členský príspevok neplatí."
+  },
+  "kategorie": [
+    { "nazov": "Predprípravka", "vek": "4 – 6 rokov", "text": "Prvé kroky na ihrisku: ovládanie lopty, všeobecný pohybový rozvoj a pravidlá futbalu." },
+    { "nazov": "Prípravka", "vek": "U9 – U11", "text": "Základy práce s loptou, radosť z hry a prvé zápasy. Dôležitejšie než výsledok je, koľkokrát sa dieťa dostane k lopte." },
+    { "nazov": "Žiaci", "vek": "U12 – U15", "text": "Individuálne herné činnosti, postupne taktika a odvaha v náročnejších situáciách. Hráči sa učia rýchlo rozhodovať a niesť zodpovednosť." },
+    { "nazov": "Dorast", "vek": "U17 – U19", "text": "Spojenie individuálnej kvality s tímovou hrou a príprava na seniorský futbal, kde rozhoduje rýchlosť rozhodovania." }
+  ],
+  "_kategorie": "web klubu fcto.sk – Mládež (texty skrátené)",
+  "mladeznikov": "viac ako 250",
+  "facebook": "https://www.facebook.com/fczochari/",
+  "_facebook": "odkaz z hlavičky webu fcto.sk; Instagram klubu sa nenašiel (16. 11. 2026)",
+  "sportnetUrl": "https://sportnet.sme.sk/futbalnet/k/fc-topolcany/",
+  "staryWeb": "https://www.fcto.sk/",
+  "dvePercenta": "https://www.fcto.sk/aktuality/news_darujte-nam-2/",
+  "stadion": {
+    "_zdroj": "Sportnet – údaje ihriska zo zápisu o stretnutí (adresa, kapacita, rozmery, poloha); zmluva o využívaní štadióna (CRZ, Mestské služby Topoľčany) – plochy; web klubu – nová tribúna",
+    "nazov": "Štadión Vojtecha Schotterta",
+    "adresa": ["Dr. P. Adámiho", "955 01 Topoľčany"],
+    "kapacita": 5000,
+    "sedadla": 295,
+    "vip": 50,
+    "rozmery": "105 × 68 m",
+    "geo": [48.5547392, 18.1724032],
+    "plochy": [
+      { "nazov": "Hlavná hracia plocha", "text": "Trávnik 105 × 68 m pred hlavnou tribúnou s 295 miestami na sedenie, z toho 50 VIP." },
+      { "nazov": "Umelá tráva", "text": "Ihrisko s umelou trávou a vlastnými šatňami. Pri ňom pribudla nová tribúna." },
+      { "nazov": "Vedľajšia hracia plocha", "text": "Druhá trávnatá plocha v areáli štadióna." }
+    ],
+    "spravca": "Mestské služby Topoľčany, s.r.o.",
+    "_spravca": "zmluva o využívaní mestského futbalového štadióna (CRZ) – štadión patrí mestu, prevádzkujú ho Mestské služby Topoľčany"
+  },
+  "historia": [
+    { "rok": "1912", "text": "V Topoľčanoch vzniká futbalový klub NLTE Topoľčany. Od neho sa odvíja viac ako storočná história futbalu v meste.", "zdroj": "RSSSF; Wikipédia" },
+    { "rok": "1985", "text": "Na štadióne sa konala spartakiáda. Podľa primátora Petra Baláža (2013) to bola dovtedy posledná veľká investícia do štadióna.", "zdroj": "SITA, 26. 9. 2013" },
+    { "rok": "2011/12", "text": "MFK Topvar Topoľčany hrá III. ligu Západ, ženy I. ligu, dorast III. ligu a starší aj mladší žiaci I. ligu.", "zdroj": "archív webu mfktopolcany.sk" },
+    { "rok": "2015/16", "text": "V Slovenskom pohári sa Topoľčany v 5. kole stretli s prvoligovým Ružomberkom a prehrali 0:5.", "zdroj": "Wikipédia" },
+    { "rok": "2018", "text": "Denis Jančovič a Marek Fico zakladajú FC Žochári, aby odchovanci topoľčianskeho futbalu mohli hrať ďalej, aj keď už nestíhajú vyššie súťaže.", "zdroj": "ČeTV Topoľčany, august 2018" },
+    { "rok": "2019", "text": "MFK Topvar Topoľčany sa v marci odhlásil zo IV. ligy Juhovýchod.", "zdroj": "Wikipédia" },
+    { "rok": "2020", "text": "Vzniká FC Topoľčany, aby nadviazal na viac ako 100-ročnú históriu futbalu v meste. Cieľ: ekonomicky stabilný, transparentný a férový klub, postavený na výchove mládeže. Kluby sa spojili, mesto je opäť partnerom.", "zdroj": "web klubu fcto.sk" },
+    { "rok": "2021/22", "text": "Majstrovský hetrik: mládež vyhrala v jednej sezóne tri súťaže ZsFZ (U17, U15 a U12).", "zdroj": "web klubu fcto.sk" },
+    { "rok": "2023/24", "text": "Starší žiaci vyhrali II. ligu ZsFZ tretíkrát za sebou, čo sa dovtedy nepodarilo nikomu. Prípravky hrajú 1. ligu prípraviek proti Spartaku Trnava, DAC či Zlatým Moravciam.", "zdroj": "web klubu fcto.sk" }
+  ],
+  "vitrina": {
+    "_zdroj": "web klubu fcto.sk – Majstrovský hatrick; FC Topoľčany ovládli 2. ligu žiakov; Nový rekord 2. ligy SŽ ZSFZ",
+    "tituly": [
+      { "sezona": "2021/22", "sutaz": "III. liga mladšieho dorastu", "tim": "U17", "trener": "Pavol Baláž" },
+      { "sezona": "2021/22", "sutaz": "II. liga starších žiakov", "tim": "U15", "trener": "Marek Ladický" },
+      { "sezona": "2021/22", "sutaz": "III. liga mladších žiakov", "tim": "U12", "trener": "Jakub Kastelovič", "pozn": "titul istý niekoľko kôl pred koncom, proti o rok starším" },
+      { "sezona": "2022/23", "sutaz": "II. liga starších žiakov", "tim": "U15", "trener": "Juraj Jakubička", "skore": "127:31" },
+      { "sezona": "2022/23", "sutaz": "II. liga mladších žiakov", "tim": "U13", "trener": "Marek Ladický", "skore": "211:26", "pozn": "majstri štyri kolá pred koncom" },
+      { "sezona": "2023/24", "sutaz": "II. liga starších žiakov", "tim": "ročník 2009", "trener": "Juraj Jakubička", "skore": "98:10", "pozn": "tretí titul za sebou, ako prvý klub v histórii súťaže" },
+      { "sezona": "2023/24", "sutaz": "III. liga starších žiakov", "tim": "ročník 2010", "trener": "Marek Ladický, Pavol Baláž", "skore": "146:26", "pozn": "54 zápasov bez prehry od 1. 9. 2022" }
+    ]
+  },
+  "osobnosti": {
+    "_zdroj": "Wikipédia sk – MFK Topvar Topoľčany (Slávni hráči); Peter Doležaj, Mário Breška, Ladislav Jurkemik (Wikipédia sk)",
+    "zoznam": [
+      { "meno": "Ladislav Jurkemik", "text": "majster Európy 1976, reprezentačný tréner Slovenska 2002 – 2003" },
+      { "meno": "Peter Doležaj", "text": "rodák z Topoľčian, slovenský reprezentant" },
+      { "meno": "Mário Breška", "text": "rodák z Topoľčian" },
+      { "meno": "Vojtech Schottert", "text": "po ňom je pomenovaný štadión" },
+      { "meno": "Augustín Paulík", "text": "" },
+      { "meno": "Jaroslav Prekop", "text": "" },
+      { "meno": "Dávid Kubrický", "text": "" }
+    ]
+  },
+  "partneri": {
+    "_zdroj": "web klubu fcto.sk – Partneri (logá prepísané do textu)",
+    "zoznam": ["Mesto Topoľčany", "Nitriansky samosprávny kraj", "Pekáreň Smatana Topoľčany", "Topnad Transport – Logistics", "Toptrans", "T-pack", "Krajčík Elektro", "Mister & Sommer Automatic Technology", "Encare", "Trachea", "Ekonpro", "MS Šport", "Tristanpress", "MY Regionálne noviny", "Topgame", "Pizza House"]
+  },
+  "nsk": "Projekt „Bezpečná doprava a kvalitnejší tréningový proces pre našich hráčov“ podporil Nitriansky samosprávny kraj dotáciou.",
+  "sutaze": {
+    "_pozn": "čitateľné názvy súťaží namiesto skratiek a názvov so sponzormi zo Sportnetu",
+    "Slovnaft Cup": "Slovnaft Cup",
+    "Majstrovstvá regiónu - IV. liga Macron | yoursport ZsFZ": "IV. liga",
+    "III. liga U19 Macron | yoursport ZsFZ": "III. liga U19 ZsFZ",
+    "III. liga U17 Macron | yoursport ZsFZ": "III. liga U17 ZsFZ",
+    "I. LSŽ - U15": "I. liga starších žiakov U15, Západ",
+    "I. LSŽ - U14": "I. liga starších žiakov U14, Západ",
+    "I. LMŽ - U13": "I. liga mladších žiakov U13, Západ",
+    "I. LMŽ - U12": "I. liga mladších žiakov U12, Západ",
+    "IV. liga - Ž - U13 - ObFZ TO": "IV. liga žiakov U13 ObFZ Topoľčany",
+    "Prípravka U11": "Prípravka U11, skupina Západ",
+    "Prípravka U10": "Prípravka U10, skupina Západ",
+    "Prípravka U09": "Prípravka U9, skupina Západ",
+    "III. liga-prípravka-U11- ObFZ TO": "III. liga prípraviek U11 ObFZ Topoľčany",
+    "III. liga-prípravka-U09- ObFZ TO": "III. liga prípraviek U9 ObFZ Topoľčany"
+  }
+}
