@@ -75,6 +75,10 @@ if (filters) {
   });
   if ($(`[data-f-team="${CSS.escape(state.team)}"]`) && $(`[data-f-where="${CSS.escape(state.where)}"]`)) apply();
   else { state.team = ''; state.where = ''; apply(); }
+  document.documentElement.classList.remove('flt'); // zoznam je vyfiltrovaný, môže sa ukázať (pozri HEAD_JS v build.js)
+  // na telefóne je pás tímov posuvný: zvolený tím z adresy (napr. U13 B) posunúť do stredu, inak nie je vidieť, čo je vybraté
+  const on = $('[data-f-team][aria-pressed="true"]'), strip = on?.parentElement;
+  if (state.team && strip && strip.scrollWidth > strip.clientWidth) strip.scrollLeft += on.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - on.offsetWidth) / 2;
 }
 
 // ---- kalendár zápasov: odber cez webcal a Google Kalendár (potrebujú úplnú adresu .ics) ----

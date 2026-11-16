@@ -72,7 +72,8 @@ const teams = sn.teams.map((t) => {
 // tímy bez zápasu v sezóne (napr. prihlásený B-tím bez súťaže) sa na webe neukazujú
 for (let i = teams.length - 1; i >= 0; i--) if (!sn.matches.some((m) => m.team === teams[i].slug)) teams.splice(i, 1);
 const bySlug = Object.fromEntries(teams.map((t) => [t.slug, t]));
-const matches = sn.matches.map((m) => {
+// kolo bez súpera (voľno) vedie Sportnet ako zápas s prázdnym súperom: na webe by z neho bol riadok bez mena a stránka „FC Topoľčany –“
+const matches = sn.matches.filter((m) => String(m.opponent || '').trim()).map((m) => {
   const t = bySlug[m.team];
   const past = m.played || m.date < TODAY;
   let gf = null, ga = null, res = null;
@@ -151,7 +152,9 @@ const socLinks = (cls = 'soc') => `<ul class="${cls}">${SOC.map(([k, t, i]) => `
 
 // ---- CSP a rozloženie ----------------------------------------------------------------------------
 // GitHub Pages nedovolí hlavičky, preto <meta>: skripty len z webu, jediný inline skript HEAD_JS povolený hashom.
-const HEAD_JS = `document.documentElement.classList.add('js')`;
+// .flt: zoznam zápasov s filtrom v adrese (?tim=, ?kde=) je neviditeľný, kým ho site.mjs nevyfiltruje (inak skáče, CLS až 0,3);
+// pri zlyhaní site.mjs ho odkryje udalosť load
+const HEAD_JS = `var d=document.documentElement;d.classList.add('js');if(/[?&](tim|kde)=/.test(location.search)){d.classList.add('flt');addEventListener('load',function(){d.classList.remove('flt')})}`;
 const sha256 = (s) => `'sha256-${crypto.createHash('sha256').update(s, 'utf8').digest('base64')}'`;
 const CONNECT = ["'self'", ...(config.supabase?.url ? [new URL(config.supabase.url).origin] : [])];
 const CSP = [
@@ -387,7 +390,7 @@ function joinBox(R, full = false) {
   return `<div class="join">
   <p class="eyebrow">Nábor</p>
   <h3 class="h3">Chce vaše dieťa hrať futbal?</h3>
-  <p>Predprípravka je pre deti od 4 do 6 rokov. Dohodnite si tréning alebo skúšku${full ? ', prvý tréning je bez záväzkov' : ''}.</p>
+  <p>Predprípravka je pre deti od 4 do 6 rokov. ${full ? 'Začínate s futbalom alebo sa chcete posunúť ďalej? ' : ''}Zavolajte alebo napíšte a dohodnite si tréning či skúšku.</p>
   <p class="btns"><a class="btn btn--red" href="${tel(club.mladez.telefon)}">${I.phone}${esc(club.mladez.telefon)}</a><a class="btn btn--line" href="mailto:${club.mladez.email}">${I.mail}${esc(club.mladez.email)}</a></p>
 </div>`;
 }
@@ -476,7 +479,7 @@ add('zapasy/', {
     };
     return `${pageHead({ title: 'Zápasy a výsledky', sub: `Sezóna ${SEASON}, všetky tímy. Výsledky, góly a karty preberáme zo Sportnetu.`, R, crumbs: [[null, 'Zápasy']] })}
 <section class="sec sec--first"><div class="wrap">
-  <div class="filters" data-filters hidden>
+  <div class="filters" data-filters>
     <div class="chips" role="group" aria-label="Tím"><button type="button" class="chip" data-f-team="" aria-pressed="true">Všetky</button>${teams.map((t) => `<button type="button" class="chip" data-f-team="${t.slug}" aria-pressed="false">${esc(t.short)}</button>`).join('')}</div>
     <div class="chips" role="group" aria-label="Miesto"><button type="button" class="chip" data-f-where="" aria-pressed="true">Doma aj vonku</button><button type="button" class="chip" data-f-where="doma" aria-pressed="false">Doma</button><button type="button" class="chip" data-f-where="vonku" aria-pressed="false">Vonku</button></div>
   </div>
@@ -714,7 +717,7 @@ add('kontakt/', {
   <dl class="facts">
     <div><dt>Názov</dt><dd>${esc(club.pravnyNazov)}</dd></div>
     <div><dt>Štadión</dt><dd>${esc(club.stadion.nazov)}, ${club.stadion.adresa.map(esc).join(', ')}</dd></div>
-    <div><dt>Fan zóna</dt><dd><a href="mailto:${club.fanzona.email}">${esc(club.fanzona.email)}</a></dd></div>
+    <div><dt>Fan zóna</dt><dd><a href="mailto:${club.fanzona.email}">${esc(club.fanzona.email).replace('@', '<wbr>@')}</a></dd></div>
   </dl>
   <div>
     <h2 class="h3">Klub na webe</h2>
