@@ -1,0 +1,195 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//FC Topoľčany//Zapasy//SK
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FC Topoľčany – U9 B Prípravka
+X-WR-TIMEZONE:Europe/Bratislava
+BEGIN:VTIMEZONE
+TZID:Europe/Bratislava
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:zapas-6a66feedb02131318ec7297d@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20260831T173000
+DURATION:PT2H
+SUMMARY:U9 B: TJ Slovan Preseľany – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 1. kolo\nZápas vo
+ nku
+LOCATION:Štadión TJ Slovan Preseľany
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feedb02131318ec72aab@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20260907T170000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – TJ Slovan Veľké Bedzany
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 2. kolo\nDomáci z
+ ápas
+LOCATION:Štadión Vojtecha Schotterta
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feedb02131318ec72925@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20260914T163000
+DURATION:PT2H
+SUMMARY:U9 B: OFK Veľké Ripňany – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 3. kolo\nZápas vo
+ nku
+LOCATION:OFK Veľké Ripňany
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feedb02131318ec7298a@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20260921T163000
+DURATION:PT2H
+SUMMARY:U9 B:  – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 4. kolo\nZápas vo
+ nku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feedb02131318ec72c88@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20260928T160000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – OFK Ludanice
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 5. kolo\nDomáci z
+ ápas
+LOCATION:Štadión Vojtecha Schotterta
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feedb02131318ec72ce1@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20261005T160000
+DURATION:PT2H
+SUMMARY:U9 B: OFK obce Prašice – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 6. kolo\nZápas vo
+ nku
+LOCATION:OFK Prašice
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec7301a@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20261012T153000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – OFK Práznovce
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 7. kolo\nDomáci z
+ ápas
+LOCATION:Štadión Vojtecha Schotterta
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feedb02131318ec72d5a@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20261019T150000
+DURATION:PT2H
+SUMMARY:U9 B: OFK Solčany – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 8. kolo\nZápas vo
+ nku
+LOCATION:Štadión OFK Solčany
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec72ee9@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20261026T150000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – OFK Tovarníky
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 9. kolo\nDomáci z
+ ápas
+LOCATION:Štadión Vojtecha Schotterta
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec730f0@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270412T163000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – TJ Slovan Preseľany
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 10. kolo\nDomáci 
+ zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec72f2a@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270419T163000
+DURATION:PT2H
+SUMMARY:U9 B: TJ Slovan Veľké Bedzany – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 11. kolo\nZápas v
+ onku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec72fe7@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270426T163000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – OFK Veľké Ripňany
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 12. kolo\nDomáci 
+ zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec72fa5@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270503T170000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – 
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 13. kolo\nDomáci 
+ zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec7318b@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270510T170000
+DURATION:PT2H
+SUMMARY:U9 B: OFK Ludanice – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 14. kolo\nZápas v
+ onku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec73187@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270517T170000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – OFK obce Prašice
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 15. kolo\nDomáci 
+ zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec73182@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270524T170000
+DURATION:PT2H
+SUMMARY:U9 B: OFK Práznovce – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 16. kolo\nZápas v
+ onku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec732a9@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270531T173000
+DURATION:PT2H
+SUMMARY:U9 B: FC Topoľčany U9 B – OFK Solčany
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 17. kolo\nDomáci 
+ zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a66feeeb02131318ec73337@fc-topolcany.sportnet
+DTSTAMP:20261116T223204Z
+DTSTART;TZID=Europe/Bratislava:20270607T173000
+DURATION:PT2H
+SUMMARY:U9 B: OFK Tovarníky – FC Topoľčany U9 B
+DESCRIPTION:III. liga prípraviek U9 ObFZ Topoľčany\, 18. kolo\nZápas v
+ onku
+END:VEVENT
+END:VCALENDAR
