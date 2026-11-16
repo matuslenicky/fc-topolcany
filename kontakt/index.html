@@ -2,7 +2,7 @@
 <html lang="sk" data-root="../" class="has-demo">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-Du+OJKJSbdUgz5nrHeWWINvez6XKDDU/tyj/5c2uvwo='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; manifest-src 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-mvnHwz+lJQZdVAYqqUA1AagJMWjuGlUGzmpSslu4MpQ='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; manifest-src 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Návrh webu – Kontakt | FC Topoľčany</title>
@@ -18,7 +18,7 @@
 <link rel="preload" href="../fonts/hanken-grotesk-400.woff" as="font" type="font/woff" crossorigin>
 
 <link rel="stylesheet" href="../css/site.css">
-<script>document.documentElement.classList.add('js')</script>
+<script>var d=document.documentElement;d.classList.add('js');if(/[?&](tim|kde)=/.test(location.search)){d.classList.add('flt');addEventListener('load',function(){d.classList.remove('flt')})}</script>
 <script type="module" src="../js/site.mjs"></script>
 </head>
 <body>
@@ -55,7 +55,7 @@
   <dl class="facts">
     <div><dt>Názov</dt><dd>FC Topoľčany o.z.</dd></div>
     <div><dt>Štadión</dt><dd>Štadión Vojtecha Schotterta, Dr. P. Adámiho, 955 01 Topoľčany</dd></div>
-    <div><dt>Fan zóna</dt><dd><a href="mailto:futbaltopolcany@gmail.com">futbaltopolcany@gmail.com</a></dd></div>
+    <div><dt>Fan zóna</dt><dd><a href="mailto:futbaltopolcany@gmail.com">futbaltopolcany<wbr>@gmail.com</a></dd></div>
   </dl>
   <div>
     <h2 class="h3">Klub na webe</h2>

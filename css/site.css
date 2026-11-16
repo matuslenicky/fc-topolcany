@@ -145,8 +145,8 @@ html:not(.js) .menu-btn { display: none; }
 .sec--mist { background: var(--mist); }
 @media (min-width: 700px) { .sec { padding: 72px 0; } .sec--first { padding-top: 44px; } }
 .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 4px 20px; flex-wrap: wrap; margin-bottom: 24px; }
-.sec-head .h2 { position: relative; padding-left: 18px; }
-.sec-head .h2::before { content: ''; position: absolute; left: 0; top: .12em; bottom: .12em; width: 5px; background: var(--red); box-shadow: 9px 0 0 -2px var(--gold); }
+/* značka pred nadpisom: štvorček s červenými šikmými pruhmi ako stena štadióna */
+.sec-head .h2::before { content: ''; display: inline-block; width: .56em; height: .56em; margin-right: .32em; vertical-align: .02em; background: repeating-linear-gradient(-52deg, var(--red-b) 0 .09em, transparent .09em .18em); box-shadow: inset 0 0 0 .06em var(--red-b); }
 .cols2 { display: grid; gap: 36px; }
 .cols2 > * { min-width: 0; }
 @media (min-width: 900px) { .cols2 { grid-template-columns: 1fr 1fr; gap: 48px; } }
@@ -168,7 +168,9 @@ html:not(.js) .menu-btn { display: none; }
 .hero { position: relative; isolation: isolate; display: flex; align-items: flex-end; min-height: min(84svh, 640px); color: #fff; background: var(--maroon-d); }
 .hero-bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
-.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(52, 12, 8, .25) 0%, rgba(52, 12, 8, .55) 42%, rgba(40, 9, 6, .94) 100%); }
+.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(52, 12, 8, .2) 0%, rgba(52, 12, 8, .5) 28%, rgba(46, 10, 7, .76) 44%, rgba(40, 9, 6, .95) 100%); }
+/* nadtitulok leží na fotke: pod 900 px svetlá zlatá a tieň, aby mal kontrast aj nad svetlými miestami fotky */
+.hero .eyebrow { color: var(--gold-l); text-shadow: 0 1px 2px rgba(0, 0, 0, .7), 0 0 12px rgba(40, 9, 6, .8); }
 .hero-in { padding-top: 120px; padding-bottom: 40px; }
 .hero-copy { max-width: 640px; }
 .hero-h { font-size: clamp(2.8rem, 12vw, 6rem); line-height: .95; letter-spacing: -.02em; font-style: italic; text-shadow: 0 2px 24px rgba(0, 0, 0, .35); }
@@ -179,6 +181,7 @@ html:not(.js) .menu-btn { display: none; }
   .hero { align-items: center; min-height: min(80vh, 700px); }
   .hero::after { content: ''; position: absolute; inset: 16px; border: 2px solid rgba(216, 180, 90, .85); pointer-events: none; }
   .hero-bg::after { background: linear-gradient(90deg, rgba(40, 9, 6, .92) 0%, rgba(52, 12, 8, .7) 45%, rgba(52, 12, 8, .1) 85%); }
+  .hero .eyebrow { color: var(--gold); }
   .hero-in { padding-top: 80px; padding-bottom: 120px; }
 }
 
@@ -186,13 +189,14 @@ html:not(.js) .menu-btn { display: none; }
 .board { background: var(--mist); padding: 22px 0 8px; }
 .board-in { min-width: 0; }
 @media (min-width: 900px) { .board { background: linear-gradient(transparent 0 80px, var(--mist) 80px); padding: 0; margin-top: -80px; position: relative; z-index: 2; } }
-.tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: 0 calc(-1 * var(--gut)) 10px; padding: 4px var(--gut); scroll-padding-inline: var(--gut); }
+/* vnútorný okraj 6 px: posuvný pás inak oreže fokusový rámik (3 px + odsadenie 2 px) */
+.tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: -2px calc(-1 * var(--gut)) 8px; padding: 6px var(--gut); scroll-padding-inline: var(--gut); }
 .tabs::-webkit-scrollbar { display: none; }
 .tabs button { flex: none; min-height: 44px; min-width: 52px; padding: 6px 14px; border: 2px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--maroon); font: 700 .9375rem/1 var(--text); cursor: pointer; }
 .tabs button[aria-selected="true"] { background: var(--maroon); border-color: var(--maroon); color: var(--gold-l); }
 .tabs button:hover:not([aria-selected="true"]) { border-color: var(--maroon); }
 @media (min-width: 900px) {
-  .tabs { margin: 0 0 10px; padding: 4px; scroll-padding-inline: 4px; }
+  .tabs { margin: -2px -2px 8px; padding: 6px; scroll-padding-inline: 6px; }
   .tabs button { background: rgba(255, 255, 255, .94); border-color: transparent; }
 }
 .tabp:focus-visible { outline-offset: 4px; border-radius: 10px; }
@@ -274,9 +278,11 @@ a.mrow-in:hover .mr-opp { text-decoration: underline; }
 .cols2--list .h2 { margin-bottom: 18px; }
 .empty { color: var(--muted); padding: 12px 0; }
 
-/* filtre */
+/* filtre: bez JS sa skryjú; trieda .js je na <html> od prvého vykreslenia, takže sa zoznam pod nimi neposúva (CLS) */
+html:not(.js) .filters { display: none; }
+html.flt .cols2--list { visibility: hidden; }
 .filters { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
-.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: 0 calc(-1 * var(--gut)); padding: 2px var(--gut); }
+.chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: -4px calc(-1 * var(--gut)); padding: 6px var(--gut); }
 .chips::-webkit-scrollbar { display: none; }
 .chip { flex: none; min-height: 44px; padding: 8px 16px; border: 2px solid var(--line); border-radius: 6px; background: var(--paper); color: var(--ink); font: 700 .9375rem/1 var(--text); cursor: pointer; }
 .chip:hover { border-color: var(--maroon); }
@@ -288,7 +294,7 @@ a.mrow-in:hover .mr-opp { text-decoration: underline; }
 .cal { position: relative; display: inline-block; }
 .cal > summary { list-style: none; }
 .cal > summary::-webkit-details-marker { display: none; }
-.cal-pop { position: absolute; z-index: 20; left: 0; top: calc(100% + 6px); width: min(320px, calc(100vw - 2 * var(--gut))); background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 6px; padding: 6px; box-shadow: 0 16px 30px -12px rgba(52, 12, 8, .35); }
+.cal-pop { position: absolute; z-index: 20; left: 0; top: calc(100% + 6px); width: min(320px, calc(100vw - 2 * var(--gut))); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 6px; box-shadow: 0 16px 30px -12px rgba(52, 12, 8, .35); }
 .cal-o { display: flex; flex-direction: column; gap: 2px; padding: 10px 12px; border-radius: 4px; color: var(--ink); text-decoration: none; }
 .cal-o:hover { background: var(--mist); }
 .cal-o b { color: var(--maroon); }
@@ -361,17 +367,20 @@ a.mrow-in:hover .mr-opp { text-decoration: underline; }
 /* ---- tímy ---- */
 .teams-intro { display: grid; gap: 24px; margin-bottom: 30px; }
 @media (min-width: 960px) { .teams-intro { grid-template-columns: minmax(0, 1fr) minmax(0, 440px); gap: 48px; align-items: start; } }
-.join { padding: 22px 22px 8px; border-radius: 6px; background: var(--mist); border-left: 5px solid var(--red); }
+/* nábor a ponuky: tenký zlatý lem vo vnútri karty (rovnaký motív ako rám fotiek a zápasovej dosky) */
+.join, .offer { position: relative; padding: 24px 24px 10px; border-radius: 6px; background: var(--mist); }
+.join::before, .offer::before { content: ''; position: absolute; inset: 6px; border: 1px solid var(--gold); border-radius: 3px; pointer-events: none; }
+.join > *, .offer > * { position: relative; }
 .join .h3 { margin-bottom: 8px; }
 .join .eyebrow { margin-bottom: 6px; }
 .tgroup + .tgroup { margin-top: 26px; }
 .tgroup-h { font: 700 .8125rem/1.2 var(--text); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
 .tgrid { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); }
 @media (min-width: 700px) { .tgrid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } }
-.tcard a { display: flex; flex-direction: column; height: 100%; padding: 16px 16px 14px; border-radius: 6px; color: var(--ink); text-decoration: none; background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--red); }
-.tcard a:hover { border-color: var(--maroon); border-top-color: var(--gold); }
+.tcard a { display: flex; flex-direction: column; height: 100%; padding: 16px 16px 14px; border-radius: 6px; color: var(--ink); text-decoration: none; background: var(--paper); border: 1px solid var(--line); }
+.tcard a:hover { border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); }
 .tcard--adult { grid-column: 1 / -1; }
-.tcard--adult a { background: var(--maroon); color: #fff; border-color: var(--maroon); border-top-color: var(--gold); }
+.tcard--adult a { background: var(--maroon); color: #fff; border-color: var(--maroon); box-shadow: inset 0 0 0 4px var(--maroon), inset 0 0 0 5px var(--gold); }
 .tcard--adult a:hover { background: var(--maroon-d); }
 .tcard-n { font-size: clamp(1.35rem, 4.6vw, 1.7rem); line-height: 1; color: var(--maroon); }
 .tcard--adult .tcard-n { color: #fff; }
@@ -417,7 +426,7 @@ a.mrow-in:hover .mr-opp { text-decoration: underline; }
 .facts { display: grid; gap: 0 28px; margin: 0 0 22px; }
 .facts > div { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .facts dt { color: var(--muted); font-size: .9375rem; }
-.facts dd { margin: 0; font-weight: 500; }
+.facts dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
 .facts--big dd { font: 800 1.3rem/1.2 var(--disp); color: var(--maroon); }
 @media (min-width: 700px) { .facts--big { grid-template-columns: repeat(2, minmax(0, 1fr)); } .facts--big > div { grid-template-columns: 1fr; gap: 4px; } }
 @media (min-width: 1000px) { .facts--big { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
@@ -461,7 +470,7 @@ a.mrow-in:hover .mr-opp { text-decoration: underline; }
 .youth-top { display: grid; gap: 28px; }
 @media (min-width: 960px) { .youth-top { grid-template-columns: minmax(0, 560px) minmax(0, 1fr); gap: 52px; align-items: center; } }
 .steps { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); }
-.step { position: relative; padding: 22px 20px 8px; background: var(--paper); border-radius: 6px; border-top: 4px solid var(--red); }
+.step { position: relative; padding: 22px 20px 8px; background: var(--paper); border-radius: 6px; }
 .step-n { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 12px; border-radius: 50%; background: var(--maroon); color: var(--gold-l); font-size: 1.2rem; box-shadow: 0 0 0 3px var(--gold); }
 .step .h3 { margin-bottom: 2px; }
 .step-v { font-weight: 700; color: var(--gold-d); margin-bottom: 8px; }
@@ -470,15 +479,14 @@ a.mrow-in:hover .mr-opp { text-decoration: underline; }
 @media (min-width: 960px) { .fees { grid-template-columns: minmax(0, 1fr) 480px; gap: 56px; align-items: center; } }
 .tbl--fees { max-width: 420px; margin: 0 0 14px; }
 .tbl--fees td b { font: 800 1.15rem/1 var(--disp); color: var(--maroon); }
-.offer { padding: 22px 20px 8px; border-radius: 6px; background: var(--mist); border-left: 5px solid var(--gold); }
 
 /* ---- klub, štadión, kontakt ---- */
 .prose { max-width: 70ch; }
 .klub-grid { display: grid; gap: 40px; }
 @media (min-width: 1000px) { .klub-grid { grid-template-columns: minmax(0, 1fr) 320px; gap: 60px; } }
-.timeline { list-style: none; margin: 22px 0; padding: 0; border-left: 3px solid var(--gold); }
-.timeline li { position: relative; display: grid; gap: 4px; padding: 0 0 22px 24px; }
-.timeline li::before { content: ''; position: absolute; left: -9px; top: 6px; width: 15px; height: 15px; border-radius: 50%; background: var(--paper); box-shadow: inset 0 0 0 4px var(--red); }
+.timeline { list-style: none; margin: 22px 0; padding: 0; background: linear-gradient(var(--gold), var(--gold)) 0 0 / 3px 100% no-repeat; }
+.timeline li { position: relative; display: grid; gap: 4px; padding: 0 0 22px 27px; }
+.timeline li::before { content: ''; position: absolute; left: -6px; top: 6px; width: 15px; height: 15px; border-radius: 50%; background: var(--paper); box-shadow: inset 0 0 0 4px var(--red); }
 .tl-now::before { background: var(--red) !important; }
 .tl-y { font: 800 1.25rem/1.2 var(--disp); color: var(--maroon); }
 .timeline p { margin: 0; }
@@ -500,7 +508,7 @@ a.mrow-in:hover .mr-opp { text-decoration: underline; }
 .fan-list .i { width: 22px; height: 22px; color: var(--red); }
 .stad-photo { max-width: calc(var(--wrap) + 2 * var(--gut)); margin: 0 auto; padding: 24px var(--gut) 0; }
 .pitches { list-style: none; margin: 30px 0 14px; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
-.pitch { padding: 20px 20px 6px; background: var(--mist); border-radius: 6px; border-top: 4px solid var(--maroon); }
+.pitch { padding: 20px 20px 6px; background: var(--mist); border-radius: 6px; }
 .pitch-n { display: block; font-size: 2rem; line-height: 1; color: var(--gold-d); margin-bottom: 8px; }
 .stad > .h3 { margin-top: 34px; }
 .contact { display: grid; gap: 28px; }
@@ -535,7 +543,7 @@ a.mrow-in:hover .mr-opp { text-decoration: underline; }
 .ftr p { margin-bottom: .6em; }
 .ftr-src { margin-top: 12px; font-size: .8125rem; color: rgba(255, 255, 255, .78); }
 .ftr-bar { border-top: 1px solid rgba(216, 180, 90, .3); }
-.ftr-bar-in { display: flex; flex-wrap: wrap; gap: 4px 24px; padding-top: 10px; padding-bottom: 14px; font-size: .875rem; color: rgba(255, 255, 255, .78); }
+.ftr-bar-in { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 24px; padding-top: 10px; padding-bottom: 14px; font-size: .875rem; color: rgba(255, 255, 255, .78); }
 .ftr-bar a { color: rgba(255, 255, 255, .85); }
 .ftr :focus-visible { outline-color: var(--gold); }
 
