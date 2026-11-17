@@ -165,7 +165,7 @@ const CSP = [
 // menu: na počítači v riadku vpravo od erbu, na telefóne celoobrazovkový bordový panel (<dialog>) s veľkými odkazmi
 const NAV = [['zapasy/', 'Zápasy'], ['tabulky/', 'Tabuľky'], ['timy/', 'Tímy'], ['mladez/', 'Mládež'], ['klub/', 'Klub'], ['stadion/', 'Štadión'], ['kontakt/', 'Kontakt']];
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${club.stadion.geo.join(',')}`;
-const mapyUrl = `https://mapy.com/s/?q=${club.stadion.geo.join(',')}`;
+const mapyUrl = `https://mapy.com/fnc/v1/showmap?mapset=basic&amp;center=${club.stadion.geo[1]},${club.stadion.geo[0]}&amp;zoom=16&amp;marker=true`; // mapy.com/s/?q= vracia 404
 const DESC = `${club.nazov} – futbal v Topoľčanoch od roku ${club.futbalOd}. Zápasy, výsledky, tabuľky a súpisky áčka aj ${teams.length - 1} mládežníckych tímov, nábor do mládeže a Štadión Vojtecha Schotterta.`;
 
 function layout({ route, title, desc, body, active, bodyClass = '' }) {
