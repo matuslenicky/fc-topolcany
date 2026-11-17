@@ -293,7 +293,7 @@ function matchRow(m, R, { showTeam = true } = {}) {
   <span class="sh-k"><time datetime="${m.date}">${dShort(m.date)}</time>${showTeam ? ` · ${esc(m.teamObj.short)}` : ''}</span>
   <span class="sh-s">${m.score ? `<span class="sr">${RES[m.res]}, </span>${esc(m.score)}` : '–'}</span>
   <span class="sh-o">${esc(m.opponent)}</span>
-  <span class="sh-r">${m.score ? RES[m.res] : 'bez zápisu'} · ${m.home ? 'doma' : 'vonku'}</span>
+  <span class="sh-r">${m.score ? `<span aria-hidden="true">${RES[m.res]} · </span>` : 'bez zápisu · '}${m.home ? 'doma' : 'vonku'}</span>
 </${tag}></li>`;
 }
 const matchList = (list, R, opts) => `<ol class="mlist ${list.length && list.every((m) => m.past) ? 'mlist--shields' : 'mlist--fix'}">${list.map((m) => matchRow(m, R, opts)).join('')}</ol>`;
