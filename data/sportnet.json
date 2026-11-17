@@ -2,7 +2,7 @@
  "source": "Sportnet / Futbalnet",
  "appSpace": "issf_club_9553",
  "season": "2026/2027",
- "updated": "2026-11-16T22:32:02.301Z",
+ "updated": "2026-11-17T14:13:10.277Z",
  "teams": [
   {
    "slug": "a-muzstvo",
@@ -21809,6 +21809,20 @@
     },
     {
      "pos": 3,
+     "name": "FC Nitra",
+     "space": "issf_club_13503",
+     "our": false,
+     "played": 16,
+     "won": 10,
+     "draw": 3,
+     "lost": 3,
+     "gf": 52,
+     "ga": 22,
+     "pts": 33,
+     "out": false
+    },
+    {
+     "pos": 4,
      "name": "FC Spartak Trnava",
      "space": "fc-spartak-trnava.futbalnet.sk",
      "our": false,
@@ -21819,20 +21833,6 @@
      "gf": 54,
      "ga": 12,
      "pts": 33,
-     "out": false
-    },
-    {
-     "pos": 4,
-     "name": "FC Nitra",
-     "space": "issf_club_13503",
-     "our": false,
-     "played": 15,
-     "won": 10,
-     "draw": 2,
-     "lost": 3,
-     "gf": 50,
-     "ga": 20,
-     "pts": 32,
      "out": false
     },
     {
@@ -21963,6 +21963,20 @@
     },
     {
      "pos": 14,
+     "name": "FC Baník Prievidza",
+     "space": "fc-banik-hn-prievidza-handlova.futbalnet.sk",
+     "our": false,
+     "played": 15,
+     "won": 4,
+     "draw": 3,
+     "lost": 8,
+     "gf": 25,
+     "ga": 49,
+     "pts": 15,
+     "out": false
+    },
+    {
+     "pos": 15,
      "name": "AS Trenčín",
      "space": "as-trencin.futbalnet.sk",
      "our": false,
@@ -21976,7 +21990,7 @@
      "out": false
     },
     {
-     "pos": 15,
+     "pos": 16,
      "name": "MFK Skalica",
      "space": "mfk-skalica.futbalnet.sk",
      "our": false,
@@ -21987,20 +22001,6 @@
      "gf": 20,
      "ga": 44,
      "pts": 15,
-     "out": false
-    },
-    {
-     "pos": 16,
-     "name": "FC Baník Prievidza",
-     "space": "fc-banik-hn-prievidza-handlova.futbalnet.sk",
-     "our": false,
-     "played": 14,
-     "won": 4,
-     "draw": 2,
-     "lost": 8,
-     "gf": 23,
-     "ga": 47,
-     "pts": 14,
      "out": false
     },
     {
